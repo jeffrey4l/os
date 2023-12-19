@@ -1,6 +1,6 @@
 [baseos]
 name=CentOS Stream 9 - BaseOS
-baseurl=http://mirrors.tuna.tsinghua.edu.cn/9-stream/BaseOS/$basearch/os
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/BaseOS/$basearch/os
 gpgcheck=1
 repo_gpgcheck=0
 enabled=1
@@ -8,7 +8,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Officia
 
 [appstream]
 name=CentOS Stream 9 - AppStream
-baseurl=http://mirrors.tuna.tsinghua.edu.cn/9-stream/AppStream/$basearch/os
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/AppStream/$basearch/os
 gpgcheck=1
 repo_gpgcheck=0
 enabled=1
@@ -16,7 +16,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Officia
 
 [nfv]
 name=CentOS Stream 9 - NFV
-baseurl=http://mirrors.tuna.tsinghua.edu.cn/9-stream/NFV/$basearch/os
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/NFV/$basearch/os
 gpgcheck=1
 repo_gpgcheck=0
 enabled=1
@@ -24,7 +24,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Officia
 
 [rt]
 name=CentOS Stream 9 - RT
-baseurl=http://mirrors.tuna.tsinghua.edu.cn/9-stream/RT/$basearch/os
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/RT/$basearch/os
 gpgcheck=1
 repo_gpgcheck=0
 enabled=1
@@ -32,7 +32,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Officia
 
 [sig-nfv]
 name=CentOS Stream 9 - SIG NFV
-baseurl=http://mirrors.tuna.tsinghua.edu.cn/SIGs/9-stream/nfv/$basearch/openvswitch-2/
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-stream/SIGs/9-stream/nfv/$basearch/openvswitch-2/
 gpgcheck=1
 repo_gpgcheck=0
 enabled=1
@@ -40,7 +40,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-SIG-NFV
 
 [sig-virtualization]
 name=CentOS Stream 9 - SIG Virtualization
-baseurl=http://mirrors.tuna.tsinghua.edu.cn/SIGs/9-stream/virt/x86_64/kata-containers/
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-stream/SIGs/9-stream/virt/x86_64/kata-containers/
 gpgcheck=1
 repo_gpgcheck=0
 enabled=1
