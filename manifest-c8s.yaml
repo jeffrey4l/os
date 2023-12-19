@@ -130,8 +130,8 @@ repo-packages:
     packages:
       # We want the one shipping in C9S, not the equivalently versioned one in RHAOS
       - nss-altfiles
-      # Use the new containers/toolbox
-      - toolbox
+      # Use the new containers/toolbox , no toolbox for c8s
+      # - toolbox
   - repo: openshift-8s
     packages:
       - cri-o
