@@ -1,4 +1,4 @@
-[baseos]
+[baseos-8s]
 name=CentOS Stream 8 - BaseOS
 baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/BaseOS/$basearch/os
 gpgcheck=1
@@ -6,7 +6,7 @@ repo_gpgcheck=0
 enabled=1
 gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
 
-[appstream]
+[appstream-8s]
 name=CentOS Stream 8 - AppStream
 baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/AppStream/$basearch/os
 gpgcheck=1
@@ -14,7 +14,7 @@ repo_gpgcheck=0
 enabled=1
 gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
 
-[nfv]
+[nfv-8s]
 name=CentOS Stream 8 - NFV
 baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/NFV/$basearch/os
 gpgcheck=1
@@ -22,7 +22,7 @@ repo_gpgcheck=0
 enabled=1
 gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
 
-[rt]
+[rt-8s]
 name=CentOS Stream 8 - RT
 baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/RT/$basearch/os
 gpgcheck=1
@@ -30,7 +30,7 @@ repo_gpgcheck=0
 enabled=1
 gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
 
-[sig-nfv]
+[sig-nfv-8s]
 name=CentOS Stream 9 - SIG NFV
 baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/nfv/$basearch/openvswitch-2/
 gpgcheck=1
@@ -38,7 +38,7 @@ repo_gpgcheck=0
 enabled=1
 gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-SIG-NFV
 
-[sig-virtualization]
+[sig-virtualization-8s]
 name=CentOS Stream 8 - SIG Virtualization
 baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/virt/x86_64/kata-containers/
 gpgcheck=1
@@ -46,7 +46,7 @@ repo_gpgcheck=0
 enabled=1
 gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-SIG-Virtualization
 
-[okd-copr]
+[okd-copr-8s]
 name=OKD COPR
 baseurl=https://download.copr.fedorainfracloud.org/results/@OKD/okd/centos-stream-9-$basearch/
 gpgcheck=1
@@ -54,7 +54,7 @@ repo_gpgcheck=0
 enabled=0
 gpgkey=https://download.copr.fedorainfracloud.org/results/@OKD/okd/pubkey.gpg
 
-[openshift-4.12-el9]
+[openshift-8s]
 name=openshift
 baseurl=https://mirror2.openshift.com/pub/openshift-v4/dependencies/rpms/4.12-el8-beta/
 gpgcheck=1
