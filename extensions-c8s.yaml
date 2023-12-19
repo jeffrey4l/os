@@ -3,7 +3,7 @@
 # and https://github.com/coreos/fedora-coreos-tracker/issues/401
 
 repos:
-  - sig-virtualization
+  - sig-virtualization-8s
 
 extensions:
   # https://github.com/coreos/fedora-coreos-tracker/issues/326
@@ -41,7 +41,7 @@ extensions:
     architectures:
       - x86_64
     repos:
-      - nfv
+      - nfv-8s
     packages:
       - kernel-rt-core
       - kernel-rt-kvm
@@ -56,6 +56,6 @@ extensions:
     architectures:
       - x86_64
     repos:
-      - sig-virtualization
+      - sig-virtualization-8s
     packages:
       - kata-containers
