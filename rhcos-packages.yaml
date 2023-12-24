@@ -6,7 +6,7 @@ packages:
   # Extra runtime
   - afterburn
   # User experience
-  - console-login-helper-messages-issuegen console-login-helper-messages-profile
+  # - console-login-helper-messages-issuegen console-login-helper-messages-profile
   # installer iso packages
   - coreos-installer coreos-installer-bootinfra
   - ignition

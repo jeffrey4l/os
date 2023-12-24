@@ -10,10 +10,10 @@ extensions:
   usbguard:
     packages:
       - usbguard
-  kerberos:
-    packages:
-      - krb5-workstation
-      - libkadm5
+  # kerberos:
+  #   packages:
+  #     - krb5-workstation
+  #     - libkadm5
   # https://github.com/kmods-via-containers/kmods-via-containers/issues/3
   # https://gitlab.cee.redhat.com/coreos/redhat-coreos/merge_requests/866
   # These are currently overlaid onto the host so that they can be bind-mounted
@@ -52,10 +52,11 @@ extensions:
   # https://github.com/openshift/enhancements/blob/master/enhancements/sandboxed-containers/sandboxed-containers-tech-preview.md
   # GRPA-3123
   # - kata-containers
-  sandboxed-containers:
-    architectures:
-      - x86_64
-    repos:
-      - sig-virtualization-8s
-    packages:
-      - kata-containers
+  # sandboxed-containers:
+  #   architectures:
+  #     - x86_64
+  #   repos:
+  #     - sig-virtualization-8s
+  #     - appstream
+  #   packages:
+  #     - kata-containers

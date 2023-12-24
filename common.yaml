@@ -7,7 +7,7 @@ include:
   - fedora-coreos-config/manifests/user-experience.yaml
   - fedora-coreos-config/manifests/shared-workarounds.yaml
   # RHCOS owned packages
-  - rhcos-packages.yaml
+  # - rhcos-packages.yaml
 
 # Layers common to all versions of RHCOS and SCOS
 ostree-layers:
@@ -64,6 +64,9 @@ postprocess:
      sed -i "s|^PermitRootLogin yes$|PermitRootLogin no|g" /etc/ssh/sshd_config
      # Enable ClientAliveInterval and set to 180 per https://bugzilla.redhat.com/show_bug.cgi?id=1701050
      sed -i "s|^#ClientAliveInterval 0$|ClientAliveInterval 180|g" /etc/ssh/sshd_config
+
+     echo "Include /etc/ssh/sshd_config.d/*.conf" >> /etc/ssh/sshd_config
+
 
      # TEMPORARY: Create /etc/vmware-tools/tools.conf to ensure RHCOS shows up properly in VMWare
      # See https://jira.coreos.com/browse/RHCOS-258
@@ -178,7 +181,7 @@ packages:
  - container-selinux
  # Needed for newer rpm-ostree
  - "'skopeo >= 2:1.7.0'"
- - cri-o cri-tools
+ # - cri-o cri-tools
  # Not yet in RHEL, dev preview in Openshift
  - conmon-rs
  # Networking
