@@ -198,7 +198,8 @@ packages:
  # Editors
  - nano
  # Red Hat CA certs
- - subscription-manager-rhsm-certificates
+ # 一般用不到
+ # - subscription-manager-rhsm-certificates
  # Used on the bootstrap node
  - systemd-journal-remote
  # Extras
