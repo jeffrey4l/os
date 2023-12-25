@@ -1,0 +1,64 @@
+[baseos-anolis]
+name=CentOS Stream 8 - BaseOS
+baseurl=https://mirrors.aliyun.com/anolis/8/BaseOS/$basearch/os
+gpgcheck=0
+repo_gpgcheck=0
+enabled=1
+gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
+
+[appstream-anolis]
+name=CentOS Stream 8 - AppStream
+baseurl=https://mirrors.aliyun.com/anolis/8/AppStream/$basearch/os
+gpgcheck=0
+repo_gpgcheck=0
+enabled=1
+gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
+
+# Anolis has no NFV repo
+[nfv-anolis]
+name=CentOS Stream 8 - NFV
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/NFV/$basearch/os
+gpgcheck=1
+repo_gpgcheck=0
+enabled=1
+gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
+
+[rt-anolis]
+name=CentOS Stream 8 - RT
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/RT/$basearch/os
+gpgcheck=1
+repo_gpgcheck=0
+enabled=1
+gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Official
+
+[sig-nfv-anolis]
+name=CentOS Stream 9 - SIG NFV
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/nfv/$basearch/openvswitch-2/
+gpgcheck=1
+repo_gpgcheck=0
+enabled=1
+gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-SIG-NFV
+
+[sig-virtualization-anolis]
+name=CentOS Stream 8 - SIG Virtualization
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/8-stream/virt/x86_64/kata-containers/
+gpgcheck=1
+repo_gpgcheck=0
+enabled=1
+gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-SIG-Virtualization
+
+[openshift-anolis]
+name=openshift
+baseurl=https://mirror2.openshift.com/pub/openshift-v4/dependencies/rpms/4.12-el8-beta/
+gpgcheck=1
+repo_gpgcheck=0
+enabled=1
+
+[openshift-anolis-addon]
+name=openshift-addon
+baseurl=http://10.3.0.81:8080/rhocp-4.12
+enabled=1
+module_hotfixes=true
+gpgcheck=0
+
+# vim:ft=dosini
